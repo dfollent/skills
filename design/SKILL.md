@@ -41,7 +41,17 @@ Using the research document's file references, read the specific code sections t
 
 Extract 3-5 concrete code snippets (with file:line references) that the implementation should follow.
 
-### Step 3: Produce the design discussion
+### Step 3: Surface open questions first
+
+Before writing anything, identify what you cannot determine from the research or code alone. Present these questions to the user inline (not in a file) and wait for answers.
+
+- Ask only genuine blockers: approach forks, business logic ambiguities, trade-offs that need human judgment
+- Do not ask about things the research already answered
+- Do not proceed to Step 4 until the user has responded
+
+If you have no genuine open questions, say so explicitly and ask the user to confirm they want you to proceed.
+
+### Step 4: Produce the design discussion
 
 Write a markdown file to the working directory.
 Filename: `YYYY-MM-DD-TICKET-design-discussion.md` (or `YYYY-MM-DD-description-design-discussion.md` if no ticket).
@@ -97,18 +107,17 @@ Questions I need your input on before proceeding:
 - [Risk 2 and mitigation]
 ```
 
-### Step 4: Present for review
+### Step 5: Present for review
 
 After writing the file, present a summary and explicitly ask the user to:
 
 1. Confirm or correct the patterns to follow
-2. Answer the open questions
-3. Challenge any design decisions
-4. Flag missing risks or scope items
+2. Challenge any design decisions
+3. Flag missing risks or scope items
 
 Do NOT proceed to planning until the user has reviewed and approved.
 
-### Step 5: Iterate
+### Step 6: Iterate
 
 If the user provides corrections or answers:
 

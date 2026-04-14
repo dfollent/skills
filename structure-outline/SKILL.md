@@ -73,6 +73,11 @@ Show the outline and ask the user to confirm:
 3. Dependencies between phases are correct
 4. Testing strategy is adequate
 
+Wait for the user's response. If they provide corrections or push back on any point:
+1. Update the file to reflect their feedback
+2. Re-present only the changed sections
+3. Repeat until the user explicitly approves
+
 Do NOT proceed to `/create-plan` until approved.
 
 ## Rules
