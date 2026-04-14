@@ -1,0 +1,15 @@
+This project includes work derived from or inspired by the following:
+
+HumanLayer (https://github.com/humanlayer/humanlayer)
+Copyright 2024, humanlayer Authors
+Licensed under the Apache License, Version 2.0
+Skills derived from or inspired by HumanLayer's Claude Code commands:
+  - implement-plan (derived from implement_plan.md)
+  - research-codebase (inspired by research_codebase.md)
+  - create-plan (inspired by create_plan.md)
+The workflow structure across generate-questions, design, structure-outline,
+create-plan, and implement-plan is informed by Dex Horthy's CRISPY methodology.
+
+Matt Pocock (https://github.com/mattpocock/skills)
+Licensed under the MIT License
+  - grill-me (direct use of mattpocock/skills/grill-me)
