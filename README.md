@@ -2,16 +2,25 @@
 
 A collection of [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) for structured software delivery.
 
-## Setup
+## Quick Reference
 
-Copy the skills you want into your `~/.claude/skills/` directory (user-level, available across all projects) or `.claude/skills/` in a specific repo (project-level, shared with the team via git).
+| Skill | Description | Install |
+|-------|-------------|---------|
+| `/generate-questions` | Ticket to intent-neutral research questions | `npx skills@latest add dfollent/skills/generate-questions` |
+| `/research-codebase` | Objective codebase research from questions | `npx skills@latest add dfollent/skills/research-codebase` |
+| `/design` | ~200-line design discussion for human review | `npx skills@latest add dfollent/skills/design` |
+| `/structure-outline` | High-level phase outline for human review | `npx skills@latest add dfollent/skills/structure-outline` |
+| `/create-plan` | Detailed tactical plan for agent execution | `npx skills@latest add dfollent/skills/create-plan` |
+| `/implement-plan` | Phase-by-phase plan execution with verification | `npx skills@latest add dfollent/skills/implement-plan` |
+| `/grill-me` | Stress-test a plan or design | `npx skills@latest add dfollent/skills/grill-me` |
+| `/project-orient` | Load project context from Confluence | `npx skills@latest add dfollent/skills/project-orient` |
+| `/project-update` | Write findings back to Confluence | `npx skills@latest add dfollent/skills/project-update` |
+| `/project-lint` | Audit Confluence doc tree for quality | `npx skills@latest add dfollent/skills/project-lint` |
+
+Install all skills at once:
 
 ```bash
-# User-level (all projects)
-cp -r skills/* ~/.claude/skills/
-
-# Project-level (shared with team)
-cp -r skills/* .claude/skills/
+npx skills@latest add dfollent/skills
 ```
 
 ## Coding Workflow
